@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="css/fontello.css">
+     <link rel="stylesheet" type="text/css" href="css/preloader.css">
+     <link rel="stylesheet" type="text/css" href="css/main.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="js/jquery-3.5.1.min.js"></script>
+     <title> Inicio | Gatech Asesor & Tecnología</title>
+  </head>
+  <body>
+    <!-- inicia preloader de la pagina web -->
+     <div id="loader">
+       <div class="dot"></div>
+       <div class="dot"></div>
+       <div class="dot"></div>
+     </div>
+    <!-- termina el preloader de la pagina web -->
+    <!-- inicia el contenido de la web -->
+     <div id="contenido">
+       <!-- inicia barra de navegación -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-main sticky-top" id="menu">
+          <a class="navbar-brand" href="index.html">
+             <img src="img/nav-logo.png" alt="Logotipo Gatech Asesor & Tecnologia">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#inicio" aria-controls="inicio" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="inicio">
+          <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link scroll" href="#contenido"><span class="icon-home"></span> Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll" href="#Servicios"><span class="icon-users"></span> Servicios</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link scroll" href="#Somos"><span class="icon-book"></span>¿Somos?</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link scroll" href="#Contacto"><span class="icon-map"></span> Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="servicios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     Portafolio
+                 </a>
+                 <div class="dropdown-menu" aria-labelledby="servicios">
+                     <a class="dropdown-item" href="#">Desarrollo Web</a>
+                     <a class="dropdown-item" href="#">Sistemas Online</a>
+                     <a class="dropdown-item" href="#">Soporte Tecnico</a>
+                     <a class="dropdown-item" href="#">Configuración de Redes</a>
+                 </div>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <i class="icon-facebook"></i>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <i class="icon-twitter"></i>
+               </a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+                  <i class="icon-bell"></i>
+               </a>
+            </li>
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="opciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <span class="icon-cog"></span>
+               </a>
+               <div class="dropdown-menu" aria-labelledby="opciones">
+                   <a class="dropdown-item" href="#">Inicio Sesión</a>
+                   <a class="dropdown-item" href="#">Configuración</a>
+                   <a class="dropdown-item" href="#">Acerca de</a>
+               </div>
+            </li>
+          </ul>
+     </div>
+</nav>
+<!-- termina barra de navegación -->
+<!-- inicia slider -->
+<div id="slider" class="carousel slide" data-ride="carousel">
+   <!-- elemnto son las lineas o puntos de navegacion -->
+   <ol class="carousel-indicators">
+        <li data-target="#slider" data-slide-to="0" class="active"></li>
+        <li data-target="#slider" data-slide-to="1"></li>
+        <li data-target="#slider" data-slide-to="2"></li>
+        <li data-target="#slider" data-slide-to="3"></li>
+        <li data-target="#slider" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/Slider1.png" class="d-block w-100" alt="Slider1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Programamos tus Sueños</h5>
+                 <p>Somos una empresa 100% Mexicana con Jovenes talentos.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+             <img src="img/Slider2.png" class="d-block w-100" alt="Slider2">
+        </div>
+        <div class="carousel-item">
+             <img src="img/Slider3.png" class="d-block w-100" alt="Slider3">
+             <div class="carousel-caption d-none d-md-block">
+                 <h5>Te colocamos en Google</h5>
+                  <p>Posicionamos tus web en el mejor buscador de el mundo.</p>
+             </div>
+         </div>
+         <div class="carousel-item">
+              <img src="img/Slider4.png" class="d-block w-100" alt="Slider4">
+              <div class="carousel-caption d-none d-md-block">
+                  <h5>Crea tu Tienda Online</h5>
+                   <p>Coloca tus productos en todo el mundo.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+               <img src="img/Slider5.png" class="d-block w-100" alt="Slider5">
+               <div class="carousel-caption d-none d-md-block">
+                   <h5>Desarrollo Web</h5>
+                    <p>Inspirate con Nosotros Gatech Asesor & Tecnología.</p>
+               </div>
+           </div>
+    </div>
+    <!-- flechas de slider -->
+    <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Atras</span>
+    </a>
+    <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+<!-- termina slider -->
+<!-- boton hacia arriba -->
+<a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+  <span class="fa-stack">
+    <i class="icon-up-big"></i>
+  </span>
+</a>
+<!-- termina boton hacia a rriba -->
+    <div class="container py-4">
+          <div class="row" id="Servicios">
+            <div class="col-lg-12" data-aos="fade-up">
+                <h3 class="text text-center"> Servicios</h3>
+            </div>
+          </div>
+       </div>
+       <div class="container py-3">
+          <div class="row" data-aos="fade-down">
+              <div class="col aling-middle">
+              <!-- inicia nuestra tarjeta de sevicios -->
+              <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                 <div class="card-header bg-header-card">
+                    Posicionamiento Web
+                 </div>
+                 <a href="#"><img src="img/Servicio1.png" class="card-img-top servicios-img" alt="Posicionamiento seo"></a>
+                 <div class="card-body">
+                     <p class="card-text">Te posicionamos en google y los mejores buscadores</p>
+                 </div>
+              </div>
+              <!-- termina primera card-->
+              </div>
+              <div class="col aling-middle">
+              <!-- inicia nuestra tarjeta de sevicios -->
+              <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                 <div class="card-header bg-header-card">
+                   Desarrollo  Web
+                 </div>
+                 <a href="#"><img src="img/Servicio2.png" class="card-img-top servicios-img" alt="Posicionamiento seo"></a>
+                 <div class="card-body">
+                     <p class="card-text">Creamos tu web deacurdo a tus necesidades</p>
+                 </div>
+              </div>
+              <!-- termina segunda card-->
+          </div>
+          <div class="col aling-middle">
+          <!-- inicia nuestra tarjeta de sevicios -->
+          <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+             <div class="card-header bg-header-card">
+                Imagen Corporativa
+             </div>
+             <a href="#"><img src="img/Servicio3.png" class="card-img-top servicios-img" alt="Posicionamiento seo"></a>
+             <div class="card-body">
+                 <p class="card-text">Te creamos tu logotipo e imagen empresarial</p>
+             </div>
+          </div>
+          <!-- termina Tercera card-->
+       </div>
+    </div>
+    <!-- termina seccion servicios -->
+    <div class="container" data-aos="fade-up">
+       <p class="text text-center"><a href="" class="text-muted">Más Información</a></p>
+    </div>
+  </div>
+    <!-- inicia jumbotron -->
+      <div class="jumbotron jumbo">
+         <div class="container" id="Somos">
+            <div class="row">
+               <div class="col-sm-6 btn-holder"></div>
+                  <div class="col-sm-6">
+                      <h1 class="text-light" data-aos="fade-left">Gatech Asesor & Tecnología</h1>
+                      <p class="text-justify text-light" data-aos="fade-left">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                      qui officia deserunt mollit anim id est laborum.
+                      </p>
+                      <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#contac" data-aos="fade-up">Más Información</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+    <!-- termina jumbotron -->
+    <!-- Modal -->
+    <div class="modal fade" id="contac" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contacto</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                </div>
+                <div class="modal-body">
+                  <form class="form-group" action="" method="post">
+                     <div class="row">
+                        <div class="col">
+                           <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="col">
+                           <input type="tel" name="telefono" class="form-control" placeholder="Telefono" required>
+                        </div>
+                     </div><br>
+                     <div class="row">
+                        <div class="col">
+                           <input type="email" name="email" class="form-control" placeholder="email" required>
+                        </div>
+                        <div class="col">
+                           <input type="text" name="sitio" class="form-control" placeholder="Sitio web" required>
+                        </div>
+                     </div><br>
+                     <div class="container">
+                      <div class="row">
+                         <textarea name="mensaje" rows="8" cols="80" placeholder="Mensaje" required></textarea>
+                      </div>
+                    </div>
+                   </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+             </div>
+         </div>
+     </div>
+    <!-- inician icono -->
+        <div class="container">
+           <div class="row" data-aos="fade-up">
+               <div class="col-sm">
+                   <div class="container">
+                      <img src="img/icono1.png" alt="iconos" class="iconos mx-auto d-block">
+                      <h5 class="text-center py-2">Tiendas Online</h5>
+                   </div>
+               </div>
+               <div class="col-sm">
+                   <div class="container">
+                      <img src="img/icono2.png" alt="iconos" class="iconos mx-auto d-block">
+                      <h5 class="text-center py-2">Sistemas Online</h5>
+                   </div>
+               </div>
+               <div class="col-sm">
+                   <div class="container">
+                      <img src="img/icono3.png" alt="iconos" class="iconos mx-auto d-block">
+                      <h5 class="text-center py-2">Posicionamiento Online</h5>
+                   </div>
+               </div>
+               <div class="col-sm">
+                   <div class="container">
+                      <img src="img/icono4.png" alt="iconos" class="iconos mx-auto d-block">
+                      <h5 class="text-center py-2">Comunnity Manager</h5>
+                   </div>
+               </div>
+           </div>
+        </div>
+    <!-- terminan iconos -->
+    <!--inicia seccion de portafolio -->
+    <div class="container" data-aos="fade-down-right">
+         <div class="row py-4">
+               <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="img/astronauta2.png" class="img-fluid astro" alt="astronauta gatech">
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-6">
+            <!-- inicia acordeon -->
+            <div class="accordion" id="Portafolio">
+                <div class="card">
+                     <div class="card-header bg-header-card" id="headingOne">
+                       <h2 class="mb-0">
+                       <button class="btn btn-link btn-block text-left text-decoration-none text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                           Desarrollo Web
+                       </button>
+                       </h2>
+                   </div>
+                   <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#Portafolio">
+                        <div class="card-body">
+                           Contenido de el apartado web
+                             <ul class="list-group list-group-flush">
+                               <li class="list-group-item">Posicionamiento SEO</li>
+                               <li class="list-group-item">Desarrollo de Tiendas Online</li>
+                               <li class="list-group-item">Desarrollo de Blog</li>
+                               <li class="list-group-item">Portafolio</li>
+                             </ul>
+                    <!-- inicia slider de imagenes web -->
+                    <div id="carouselweb" class="carousel slide" data-ride="carousel">
+                         <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/slidersomos1.png" class="d-block w-100" alt="Slider1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/slidersomos2.png" class="d-block w-100" alt="Slider1">
+                            </div>
+                            <div class="carousel-item">
+                                 <img src="img/slidersomos1.png" class="d-block w-100" alt="Slider1">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselweb" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselweb" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                    <!-- termina Imagenes Web -->
+                  </div>
+               </div>
+           </div>
+           <div class="card">
+             <div class="card-header bg-header-card" id="headingTwo">
+                 <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed text-decoration-none text-light" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Imagen Corporativa
+                      </button>
+                </h2>
+             </div>
+             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#Portafolio">
+                  <div class="card-body">
+                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                   </div>
+             </div>
+           </div>
+           <div class="card">
+              <div class="card-header bg-header-card" id="headingThree">
+                   <h2 class="mb-0">
+                       <button class="btn btn-link btn-block text-left collapsed text-decoration-none text-light" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                             Redes Sociales
+                      </button>
+                  </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#Portafolio">
+                  <div class="card-body">
+                      Información de las redes sociales
+                  </div>
+              </div>
+           </div>
+        </div>
+      </div>
+  </div>
+</div>
+<!-- termina Acordeon -->
+<!--inicia parallax -->
+<section id="parallax">
+   <div class="jumbotron parallax">
+       <div class="container-lg">
+            <h3 class="text-center text-light" data-aos="fade-up">Temenos la Experiencia</h3>
+       </div>
+       <div class="container text-center">
+            <div class="row py-4">
+                <!-- caja de iconos -->
+                <div class="col-sm align-middle" data-aos="fade-down">
+                    <img src="img/icono5.png" alt="iconos">
+                    <div class="counter"> + 10</div>
+                    <p class="text-light parrafo">Empresas</p>
+                </div>
+                <!-- terminamos caja de iconos -->
+                <!-- caja de iconos -->
+                <div class="col-sm align-middle" data-aos="fade-down">
+                    <img src="img/icono6.png" alt="iconos">
+                    <div class="counter"> + 50</div>
+                    <p class="text-light parrafo">Proyectos</p>
+                </div>
+                <!-- terminamos caja de iconos -->
+                <!-- caja de iconos -->
+                <div class="col-sm align-middle" data-aos="fade-down">
+                    <img src="img/icono7.png" alt="iconos">
+                    <div class="counter"> + 100</div>
+                    <p class="text-light parrafo">Ideas</p>
+                </div>
+                <!-- terminamos caja de iconos -->
+            </div>
+       </div>
+   </div>
+</section>
+<!-- termina parallax-->
+<section id="Contacto" data-aos="fade-down">
+  <div class="container">
+    <div class="row py-4">
+         <div class="col-sm-6 col-md-6 col-lg-6">
+             <div id="map"></div>
+         </div>
+         <div class="col-sm-6 col-md-6 col-lg-6">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                 <div class="card-body">
+                      <form class="form-group" action="" method="post">
+                           <div class="py-2">
+                               <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                           </div>
+                           <div class="py-2">
+                               <input type="email" name="email" class="form-control" placeholder="Email" required>
+                           </div>
+                           <div class="input-group mb-3">
+                                 <div class="input-group-prepend">
+                                    <label class="input-group-text">Servicios</label>
+                                 </div>
+                                 <select class="custom-select" name="servicio">
+                                     <option selected> Selecciona opción</option>
+                                     <option value="1"> Diseño Web</option>
+                                     <option value="2"> Imagen Corporativa</option>
+                                     <option value="3"> Redes Sociales</option>
+                                 </select>
+                           </div>
+                           <hr>
+                           <input type="submit" name="submit" value="Enviar" class="btn btn-primary btn-lg btn-block">
+                      </form>
+                      <p class="text-left"><span class="icon-phone"></span> Telefono :<a href="tel:55555555"> 55-55-55-55</a></p>
+                      <p class="text-left"><span class="icon-email"></span> Email : <a href="mailto:contacto@gatech.mx">contacto@gatech.mx</a></p>
+                 </div>
+              </div>
+         </div>
+    </div>
+  </div>
+</section>
+<!-- inicia - footer -->
+ <footer class="bg-card">
+    <div class="footer-copyright text-center py-3 cabezera">
+         <div class="container">
+              <div class="row">
+                     <div class="col"></div>
+                     <div class="col"></div>
+                     <div class="col text-center">
+                          <a class="btn btn-holder nav-item" data-toggle="collapse" href="#footer" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                             <span class="icon-down-open text-light"> Abrir</span></a>
+                     <div class="row">
+                      <div class="col"></div>
+                     </div>
+                     </div>
+              </div>
+              <div class="collapse multi-collapse" id="footer">
+                  <div class="cabezera">
+                      <div class="container">
+                           <div class="row">
+                                <div class="col-sm">
+                                    <p class="text-center text-white"><span class="icon-map-o"></span> Mapa de Sitio</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-left cabezera"><span class="icon-basket"></span> Servicios</li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-coffee"></span> Quienes Somos</li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-dropbox"></span> Portafolio</li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-bookmark-empty"></span> Aviso de privacidad</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm">
+                                    <p class="text-center text-white"><span class="icon-map-o"></span> Link de interes</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-left cabezera"><span class="icon-facebook"></span><a href="https://www.facebook.com/GGatech.mx/" target="_blank"> Facebook</a></li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-twitter"></span> Twitter</li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-youtube"></span> Youtube</li>
+                                        <li class="list-group-item text-left cabezera"><span class="icon-instagram-filled"></span> Instangram</li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm">
+                                    <img src="img/logo.png" alt="logo" class="logo">
+                                </div>
+                           </div>
+                      </div>
+                  </div>
+              </div>
+              <p class="text-center text-light">@2020 copyright: Grupo Gatech Asesor & Tecnología</p>
+         </div>
+    </div>
+ </footer>
+<!-- termina footer -->
+</div>
+    <!-- termina el contenido de la web -->
+    <!-- inicia los script -->
+    <script type="text/javascript">
+        var map;
+        var lugar = {lat:19.4446282 , lng:-99.2718253 };
+        function initMap(){
+          map = new google.maps.Map(document.getElementById('map'),{
+            center: {lat:19.4446282 , lng:-99.2718253 },
+            zoom:13
+          });
+          var marker = new google.maps.Marker({
+            position: lugar,
+            map: map,
+            title:'Conalep Naucalpan I'
+          });
+        }
+     </script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLTSukAoUZfj2947RAFWOHQkuT_lthmt0&callback=initMap"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/preloader.js"></script>
+     <script src="js/main.js"></script>
+     <!-- terminan los script -->
+  </body>
+</html>
