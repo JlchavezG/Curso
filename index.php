@@ -1,3 +1,8 @@
+<?php
+// solicitar el archivo de conexión a la base de datos
+include 'includes/conecta.php';
+
+ ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -46,15 +51,25 @@
                  <a class="nav-link dropdown-toggle" href="#" id="servicios" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      Portafolio
                  </a>
-                 <div class="dropdown-menu" aria-labelledby="servicios">
-                     <a class="dropdown-item" href="#">Desarrollo Web</a>
-                     <a class="dropdown-item" href="#">Sistemas Online</a>
-                     <a class="dropdown-item" href="#">Soporte Tecnico</a>
-                     <a class="dropdown-item" href="#">Configuración de Redes</a>
+                 <div class="dropdown-menu bg-main text-info" aria-labelledby="servicios">
+                     <a class="dropdown-item text-dark" href="#">Desarrollo Web</a>
+                     <a class="dropdown-item text-dark" href="#">Sistemas Online</a>
+                     <a class="dropdown-item text-dark" href="#">Soporte Tecnico</a>
+                     <a class="dropdown-item text-dark" href="#">Configuración de Redes</a>
                  </div>
               </li>
           </ul>
           <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" href="#" id="opciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   <span class="icon-cog"></span>
+               </a>
+               <div class="dropdown-menu bg-main" aria-labelledby="opciones">
+                   <a class="dropdown-item" href="login.php">Inicio Sesión</a>
+                   <a class="dropdown-item" href="#">Configuración</a>
+                   <a class="dropdown-item" href="#">Acerca de</a>
+               </div>
+            </li>
             <li class="nav-item">
                <a class="nav-link" href="#">
                   <i class="icon-facebook"></i>
@@ -69,16 +84,6 @@
                <a class="nav-link" href="#">
                   <i class="icon-bell"></i>
                </a>
-            </li>
-            <li class="nav-item dropdown">
-               <a class="nav-link dropdown-toggle" href="#" id="opciones" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   <span class="icon-cog"></span>
-               </a>
-               <div class="dropdown-menu" aria-labelledby="opciones">
-                   <a class="dropdown-item" href="#">Inicio Sesión</a>
-                   <a class="dropdown-item" href="#">Configuración</a>
-                   <a class="dropdown-item" href="#">Acerca de</a>
-               </div>
             </li>
           </ul>
      </div>
@@ -145,6 +150,7 @@
   </span>
 </a>
 <!-- termina boton hacia a rriba -->
+<!-- inicia apartado de servicios -->
     <div class="container py-4">
           <div class="row" id="Servicios">
             <div class="col-lg-12" data-aos="fade-up">
@@ -200,6 +206,7 @@
     </div>
   </div>
     <!-- inicia jumbotron -->
+    <!-- comisnza apartado somos -->
       <div class="jumbotron jumbo">
          <div class="container" id="Somos">
             <div class="row">
@@ -293,6 +300,7 @@
            </div>
         </div>
     <!-- terminan iconos -->
+    <!-- termina apartado somos -->
     <!--inicia seccion de portafolio -->
     <div class="container" data-aos="fade-down-right">
          <div class="row py-4">
@@ -378,6 +386,7 @@
   </div>
 </div>
 <!-- termina Acordeon -->
+<!-- termina seccion portafolio -->
 <!--inicia parallax -->
 <section id="parallax">
    <div class="jumbotron parallax">
@@ -412,9 +421,11 @@
    </div>
 </section>
 <!-- termina parallax-->
+<!-- seccion contacto -->
 <section id="Contacto" data-aos="fade-down">
   <div class="container">
     <div class="row py-4">
+         <!-- div para el mapa de google -->
          <div class="col-sm-6 col-md-6 col-lg-6">
              <div id="map"></div>
          </div>
@@ -513,7 +524,7 @@
           var marker = new google.maps.Marker({
             position: lugar,
             map: map,
-            title:'Conalep Naucalpan I'
+            title:'Como extraño ese lugar'
           });
         }
      </script>
