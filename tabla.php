@@ -58,7 +58,7 @@ $guardar = $conecta->query($consulta);
                             <td><?php echo $row['F_Nacimiento']; ?></td>
                             <td><?php echo $row['Id_Genero']; ?></td>
                             <td><?php echo $row['Telefono']; ?></td>
-                            <td><a href="moodificar.php?Id_Alumnos=<?php echo $row['Id_Alumnos'];?>">Editar</a> -<a href="#">Borrar</a></td>
+                            <td><a href="moodificar.php?Id_Alumnos=<?php echo $row['Id_Alumnos'];?>">Editar</a> <a href="eliminar.php?Id_Alumnos=<?php echo $row['Id_Alumnos'];?>">-Borrar</a></td>
                          </tr>
                        <?php } ?>
                       </tbody>
